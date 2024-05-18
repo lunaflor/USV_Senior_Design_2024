@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import mplcursors
 
 #load your csv file of: lat, long, depth, current, voltage, salinity, temperature)
-df = pd.read_csv('C:\\Users\\lunaf\\Downloads\\python_estuary - Sheet1.csv')
+df = pd.read_csv('C:\\Users\\youruser\\Downloads\\python_estuary - Sheet1.csv')
 
 #assuming 'depth' column is in millimeters and you want it in ft
 df['depth'] = df['depth'].abs() / 304.8
@@ -148,9 +148,9 @@ fig3D.update_layout(
 )
 
 # Write HTML files for offline viewing
-fig2D.write_html("C:\\Users\\lunaf\\Downloads\\2D_contour_map_plot_with_markers.html")
-fig2D2.write_html("C:\\Users\\lunaf\\Downloads\\2D_contour_map_plot_without_markers.html")
-fig3D.write_html("C:\\Users\\lunaf\\Downloads\\3D_plot.html")
+fig2D.write_html("C:\\Users\\youruser\\Downloads\\2D_contour_map_plot_with_markers.html")
+fig2D2.write_html("C:\\Users\\youruser\\Downloads\\2D_contour_map_plot_without_markers.html")
+fig3D.write_html("C:\\Users\\youruser\\Downloads\\3D_plot.html")
 
 # Display the plots
 fig2D.show()
